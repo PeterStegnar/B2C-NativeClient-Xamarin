@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,6 +36,17 @@ namespace B2C_NativeClient_Xamarin.WinPhone
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+#if WINDOWS_PHONE_APP
+            if (args is IWebAuthenticationBrokerContinuationEventArgs)
+            {
+                WebAuthenticationBrokerContinuationHelper.SetWebAuthenticationBrokerContinuationEventArgs(args as IWebAuthenticationBrokerContinuationEventArgs);
+            }
+#endif
+            base.OnActivated(args);
         }
 
         /// <summary>

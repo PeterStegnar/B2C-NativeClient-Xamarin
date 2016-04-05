@@ -13,7 +13,9 @@
                  HorizontalOptions="FillAndExpand"
                  Orientation="Vertical"
                  Spacing="15">
-      <Label x:Name="myLabel" Text="B2C TodoList"/>
+      <Label Text="B2C TodoList" />
+      <Label x:Name="UsernameLabel" Text="(no user)"/>
+      <Label x:Name="MessageLabel" Text=""/>
       <Button x:Name="signinButton" Text="Sign In" Clicked="OnSignIn" />
       <Button x:Name="signupButton" Text="Sign Up" Clicked="OnSignUp" />
     </StackLayout>
