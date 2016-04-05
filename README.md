@@ -2,6 +2,11 @@
 
 WORK IN PROGRESS...
 
+# Links
+https://blog.xamarin.com/put-adal-xamarin-forms/
+https://github.com/mayur-tendulkar/ADALForForms
+
+
 # GIT do not commit client/app settings 
-git update-index --assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
-git update-index --no-assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
+- git update-index --assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
+- git update-index --no-assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
