@@ -2,7 +2,7 @@
 
 WORK IN PROGRESS...
 
-# Links
+# Based on
 https://blog.xamarin.com/put-adal-xamarin-forms/
 https://github.com/mayur-tendulkar/ADALForForms
 
