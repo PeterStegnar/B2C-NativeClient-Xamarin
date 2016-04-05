@@ -1,0 +1,3 @@
+# Cross Platform ToDoList client with Azure AD B2C authentication
+
+WORK IN PROGRESS...
