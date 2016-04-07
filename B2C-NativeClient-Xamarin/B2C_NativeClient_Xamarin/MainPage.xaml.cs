@@ -38,7 +38,7 @@ namespace B2C_NativeClient_Xamarin
             UsernameLabel.Text = result.UserInfo.Name;
         }
 
-        void OnSignUp(object sender, EventArgs e)
+        async void OnSignUp(object sender, EventArgs e)
         {
             var result = await DependencyService.Get<IAuthenticator>().Authenticate(Globals.signUpPolicy);
             UsernameLabel.Text = result.UserInfo.Name;
