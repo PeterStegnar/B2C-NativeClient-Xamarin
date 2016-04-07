@@ -1,4 +1,4 @@
-# Cross Platform Xamarin.Forms 2.2 ToDoList client with Azure AD B2C authentication
+# Cross Platform Xamarin.Forms 2.1 ToDoList client with Azure AD B2C authentication
 
 WORK IN PROGRESS...
 
