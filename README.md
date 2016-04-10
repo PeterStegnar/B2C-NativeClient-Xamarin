@@ -4,13 +4,10 @@ WORK IN PROGRESS...
 
 Status 2016-04-09: sign in running with Droid + all Windows
 
+# Links
+- https://blog.xamarin.com/put-adal-xamarin-forms/
 
-
-# Based on
-https://blog.xamarin.com/put-adal-xamarin-forms/
-https://github.com/mayur-tendulkar/ADALForForms
-
-# for each project in solution
+# ADAL v4 for each project in solution
 - install-package Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory -pre
 
 
