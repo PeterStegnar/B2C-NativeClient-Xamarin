@@ -2,9 +2,14 @@
 
 WORK IN PROGRESS...
 
+
+
 # Based on
 https://blog.xamarin.com/put-adal-xamarin-forms/
 https://github.com/mayur-tendulkar/ADALForForms
+
+# for each project in solution
+Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory -pre
 
 
 # GIT do not commit client/app settings 
