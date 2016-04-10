@@ -134,6 +134,7 @@
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="..\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems" Label="Shared" Condition="Exists('..\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems')" />
+  <Import Project="..\..\B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

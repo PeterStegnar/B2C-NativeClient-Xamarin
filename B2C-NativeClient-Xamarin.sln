@@ -15,11 +15,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B2C_NativeClient_Xamarin.Wi
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "B2C_NativeClient_Xamarin", "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.shproj", "{E1FC9E6F-0EB5-412B-A03F-3994C0B6E38D}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "B2C_NativeClient_Xamarin.WinShared", "B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.shproj", "{C07DC617-62ED-47F5-90C3-63F43DC371EE}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.projitems*{c07dc617-62ed-47f5-90c3-63f43dc371ee}*SharedItemsImports = 13
+		B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.projitems*{93355836-de00-475c-8893-9b7bd663dcb5}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{93355836-de00-475c-8893-9b7bd663dcb5}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{e1fc9e6f-0eb5-412b-a03f-3994c0b6e38d}*SharedItemsImports = 13
+		B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.projitems*{507bcb75-2421-4648-9eca-72dd3ae2e9d3}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{507bcb75-2421-4648-9eca-72dd3ae2e9d3}*SharedItemsImports = 4
+		B2C_NativeClient_Xamarin.WinShared\B2C_NativeClient_Xamarin.WinShared.projitems*{aeb074b9-a008-4733-87b3-3f619c0c1833}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{aeb074b9-a008-4733-87b3-3f619c0c1833}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{6d9edc7e-4ec2-4aad-b1e3-156d1263e12f}*SharedItemsImports = 4
 		B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\B2C_NativeClient_Xamarin.projitems*{6e6f9010-bcb9-4261-8bcc-8ba783052305}*SharedItemsImports = 4
