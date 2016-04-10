@@ -1,6 +1,8 @@
-# Cross Platform Xamarin.Forms 2.1 ToDoList client with Azure AD B2C authentication
+# Cross Platform Xamarin.Forms 2.0 ToDoList client with Azure AD B2C authentication
 
 WORK IN PROGRESS...
+
+Status 2016-04-09: sign in running with Droid + all Windows
 
 
 
@@ -9,9 +11,9 @@ https://blog.xamarin.com/put-adal-xamarin-forms/
 https://github.com/mayur-tendulkar/ADALForForms
 
 # for each project in solution
-Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory -pre
+- install-package Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory -pre
 
 
 # GIT do not commit client/app settings 
-- git update-index --assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
-- git update-index --no-assume-unchanged "B2C-NativeClient-Xamarin\B2C_NativeClient_Xamarin\Globals.cs"
+- git update-index --assume-unchanged "TodoList_Client\TodoList_Client\Globals.cs"
+- git update-index --no-assume-unchanged "TodoList_Client\TodoList_Client\Globals.cs"
