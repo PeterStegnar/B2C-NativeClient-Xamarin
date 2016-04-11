@@ -7,6 +7,7 @@ using Microsoft.Experimental.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace TodoList_Client
 {
@@ -29,8 +30,23 @@ namespace TodoList_Client
             HttpResponseMessage response = await httpClient.GetAsync(Globals.todoListBaseAddress + "/api/todolist");
             if (response.IsSuccessStatusCode)
             {
-                
+                var stringContent = await response.Content.ReadAsStringAsync();
+
+                var todos = JsonConvert.DeserializeObject<List<TodoItem>>(stringContent);
+
+                todoList.ItemsSource = todos;
+
             }
+        }
+
+        async Task addTodo(string todo)
+        {
+            HttpContent content = new FormUrlEncodedContent(new[] { new KeyValuePair<string, string>("Title", todo) });
+
+            // Call the todolist web api
+            var response = await httpClient.PostAsync(Globals.todoListBaseAddress + "/api/todolist", content);
+
+            await getTodoList();
         }
 
         async void OnRefresh(object sender, EventArgs e)
@@ -55,6 +71,10 @@ namespace TodoList_Client
             {
                 var result = await DependencyService.Get<IAuthenticator>().GetTokenSilent();
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(result.TokenType, result.Token);
+
+                await addTodo(todoEntry.Text);
+
+                todoEntry.Text = "";
             }
             catch (Exception ex)
             {

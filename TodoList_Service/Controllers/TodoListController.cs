@@ -31,7 +31,7 @@ namespace TodoListService.Controllers
     [Authorize]
     public class TodoListController : ApiController
     {
-        private const string oidClaimType = "http://schemas.microsoft.com/identity/claims/objectidentifie";
+        private const string oidClaimType = "http://schemas.microsoft.com/identity/claims/objectidentifier";
 
         //
         // To Do items list for all users.  Since the list is stored in memory, it will go away if the service is cycled.

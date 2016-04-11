@@ -27,7 +27,11 @@
         <Button x:Name="addButton" Text="Add" Clicked="OnAdd" />
       </StackLayout>
       <ListView x:Name="todoList">
-        
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding Title}" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
       </ListView>
     </StackLayout>
   </ContentPage.Content>
