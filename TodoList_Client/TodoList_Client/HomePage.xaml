@@ -17,8 +17,18 @@
       <Label Text="B2C TodoList" />
       <Label x:Name="UsernameLabel" Text="(no user)"/>
       <Label x:Name="MessageLabel" Text=""/>
+
       <Button x:Name="signinButton" Text="Sign In" Clicked="OnSignIn" />
       <Button x:Name="signupButton" Text="Sign Up" Clicked="OnSignUp" />
+
+      <Button x:Name="refreshButton" Text="Refresh" Clicked="OnRefresh" />
+      <StackLayout x:Name="todoEntryGroup" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Entry x:Name="todoEntry" Placeholder="enter task here" />
+        <Button x:Name="addButton" Text="Add" Clicked="OnAdd" />
+      </StackLayout>
+      <ListView x:Name="todoList">
+        
+      </ListView>
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
