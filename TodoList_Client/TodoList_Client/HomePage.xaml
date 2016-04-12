@@ -22,7 +22,7 @@
       <Button x:Name="signupButton" Text="Sign Up" Clicked="OnSignUp" />
 
       <Button x:Name="refreshButton" Text="Refresh" Clicked="OnRefresh" />
-      <StackLayout x:Name="todoEntryGroup" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+      <StackLayout x:Name="todoEntryGroup" Orientation="Horizontal">
         <Entry x:Name="todoEntry" Placeholder="enter task here" />
         <Button x:Name="addButton" Text="Add" Clicked="OnAdd" />
       </StackLayout>

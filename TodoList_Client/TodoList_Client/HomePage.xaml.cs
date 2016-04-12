@@ -85,21 +85,29 @@ namespace TodoList_Client
         async void OnSignIn(object sender, EventArgs e)
         {
             var result = await DependencyService.Get<IAuthenticator>().Authenticate(Globals.signInPolicy);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(result.TokenType, result.Token);
+
             UsernameLabel.Text = result.UserInfo.Name;
             signinButton.IsVisible = false;
             signupButton.IsVisible = false;
             refreshButton.IsVisible = true;
             todoEntryGroup.IsVisible = true;
+
+            await getTodoList();
         }
 
         async void OnSignUp(object sender, EventArgs e)
         {
             var result = await DependencyService.Get<IAuthenticator>().Authenticate(Globals.signUpPolicy);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(result.TokenType, result.Token);
+
             UsernameLabel.Text = result.UserInfo.Name;
             signinButton.IsVisible = false;
             signupButton.IsVisible = false;
             refreshButton.IsVisible = true;
             todoEntryGroup.IsVisible = true;
+
+            await getTodoList();
         }
 
     }
