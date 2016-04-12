@@ -6,7 +6,7 @@ The Web Api accessed by the app is secured [with OAuth Bearer token processing](
 
 ## Prerequisites
 
-- Visual Studio 2015 with Windows Phone 8.1 SDK
+- Xamarin for Visual Studio 2015
 
 ## Step 1 : download the sample code
 
